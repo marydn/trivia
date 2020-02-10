@@ -10,8 +10,6 @@ RUN apk --update upgrade \
         bcmath \
         opcache \
         intl \
-        sqlite3 \
     && docker-php-ext-enable \
         apcu \
-        opcache \
-        sqlite3
+        opcache

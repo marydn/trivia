@@ -11,7 +11,7 @@ use FakeCompany\Trivia\Users\Domain\UserRepository;
 
 final class FileUserRepository implements UserRepository
 {
-    private const FILE_PATH = __DIR__ . '/users';
+    private const FILE_PATH = __DIR__ . '/../../../../../data/db/files/users';
 
     public function find(UserId $userId): User
     {
